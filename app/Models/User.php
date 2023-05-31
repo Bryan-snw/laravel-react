@@ -52,4 +52,9 @@ class User extends Authenticatable
     {
         return $this->hasOne(Resepsi::class);
     }
+
+    public function sangjit()
+    {
+        return $this->hasOne(Sangjit::class);
+    }
 }

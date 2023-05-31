@@ -6,6 +6,7 @@ use Illuminate\Foundation\Application;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ResepsiController;
+use App\Http\Controllers\SangjitController;
 use App\Http\Controllers\PersonalsController;
 
 /*
@@ -26,6 +27,8 @@ Route::resource('/home', NewsController::class);
 Route::resource('/personals', PersonalsController::class);
 
 Route::resource('/resepsi', ResepsiController::class);
+
+Route::resource('/sangjit', SangjitController::class);
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
