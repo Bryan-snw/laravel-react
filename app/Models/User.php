@@ -57,4 +57,9 @@ class User extends Authenticatable
     {
         return $this->hasOne(Sangjit::class);
     }
+
+    public function teapai()
+    {
+        return $this->hasOne(Teapai::class);
+    }
 }

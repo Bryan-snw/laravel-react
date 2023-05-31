@@ -4,6 +4,7 @@ use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\TeapaiController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ResepsiController;
 use App\Http\Controllers\SangjitController;
@@ -29,6 +30,8 @@ Route::resource('/personals', PersonalsController::class);
 Route::resource('/resepsi', ResepsiController::class);
 
 Route::resource('/sangjit', SangjitController::class);
+
+Route::resource('/teapai', TeapaiController::class);
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [

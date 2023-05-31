@@ -1,44 +1,43 @@
 import { Link, Head, router } from "@inertiajs/react";
-export default function IndexSangjit(props) {
-    const { sangjit } = props;
+export default function IndexTeapai(props) {
+    const { teapai } = props;
 
-    console.log(sangjit);
+    console.log(teapai);
 
     function handleDelete(e, id) {
         e.preventDefault();
         if (confirm("Yakin mau dihapus?")) {
-            router.delete(`/sangjit/${id}`);
+            router.delete(`/teapai/${id}`);
         }
     }
     return (
         <div className="m-5">
-            <p className="mb-4">Homepage Data Sangjit</p>
+            <p className="mb-4">Homepage Data Teapai</p>
             <Link
                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full "
-                href="/sangjit/create"
+                href="/teapai/create"
             >
-                Isi Data Sangjit
+                Isi Data Teapai
             </Link>
             <div className="my-5">
-                {sangjit.length > 0
-                    ? sangjit.map((data, key) => {
+                {teapai.length > 0
+                    ? teapai.map((data, key) => {
                           return (
                               <div
                                   key={key}
                                   className="my-4 bg-slate-200 rounded-md p-4"
                               >
                                   <p className="text-2xl my-2">
-                                      Acara Sangjit {data.user.name}
+                                      Acara Teapai {data.user.name}
                                   </p>
-                                  <p>Tanggal Sangjit: {data.tanggalSangjit}</p>
-                                  <p>Waktu Sangjit: {data.waktuSangjit}</p>
+                                  <p>Tanggal Teapai: {data.tanggalTeapai}</p>
+                                  <p>Waktu Teapai: {data.waktuTeapai}</p>
                                   <p>
-                                      Venue Sangjit Pria:{" "}
-                                      {data.venueSangjitPria}
+                                      Venue Teapai Pria: {data.venueTeapaiPria}
                                   </p>
                                   <p>
-                                      Venue Sangjit Wanita:{" "}
-                                      {data.venueSangjitWanita}
+                                      Venue Teapai Wanita:{" "}
+                                      {data.venueTeapaiWanita}
                                   </p>
                                   <p>
                                       Last Update By: {data.last_update_by.name}
@@ -46,13 +45,13 @@ export default function IndexSangjit(props) {
                                   <div className="my-4">
                                       <Link
                                           className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-                                          href={`/sangjit/${data.id}`}
+                                          href={`/teapai/${data.id}`}
                                       >
                                           Lihat
                                       </Link>
                                       <Link
                                           className="mx-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
-                                          href={`/sangjit/${data.id}/edit`}
+                                          href={`/teapai/${data.id}/edit`}
                                       >
                                           Edit
                                       </Link>
