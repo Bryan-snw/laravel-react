@@ -9,6 +9,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ResepsiController;
 use App\Http\Controllers\SangjitController;
 use App\Http\Controllers\PersonalsController;
+use App\Http\Controllers\PemberkatanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +33,8 @@ Route::resource('/resepsi', ResepsiController::class);
 Route::resource('/sangjit', SangjitController::class);
 
 Route::resource('/teapai', TeapaiController::class);
+
+Route::resource('/pemberkatan', PemberkatanController::class);
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [

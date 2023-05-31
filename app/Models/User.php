@@ -62,4 +62,9 @@ class User extends Authenticatable
     {
         return $this->hasOne(Teapai::class);
     }
+
+    public function pemberkatan()
+    {
+        return $this->hasOne(Pemberkatan::class);
+    }
 }

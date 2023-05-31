@@ -9,6 +9,7 @@ export default function LihatTeapai({ teapai }) {
                 <p>Waktu Teapai: {teapai.waktuTeapai}</p>
                 <p>Venue Teapai Pria: {teapai.venueTeapaiPria}</p>
                 <p>Venue Teapai Wanita: {teapai.venueTeapaiWanita}</p>
+                <p>Last Update By: {teapai.last_update_by.name}</p>
 
                 <div className="my-4">
                     <p>Perlengkapan Teapai</p>

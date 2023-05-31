@@ -42,7 +42,7 @@ class SangjitController extends Controller
             'venueSangjitWanita' => 'required',
             'itemSangjitPria' => '',
             'itemSangjitWanita' => '',
-            'rundownAcaraSangjit' => 'required',
+            'rundownAcaraSangjit' => '',
         ]);
 
 
@@ -85,7 +85,7 @@ class SangjitController extends Controller
             'venueSangjitWanita' => 'required',
             'itemSangjitPria' => '',
             'itemSangjitWanita' => '',
-            'rundownAcaraSangjit' => 'required',
+            'rundownAcaraSangjit' => '',
         ]);
 
         Sangjit::where('id', $sangjit->id)

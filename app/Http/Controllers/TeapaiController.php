@@ -41,7 +41,7 @@ class TeapaiController extends Controller
             'venueTeapaiPria' => 'required',
             'venueTeapaiWanita' => 'required',
             'perlengkapanTeapai' => '',
-            'rundownAcaraTeapai' => 'required',
+            'rundownAcaraTeapai' => '',
         ]);
 
 
@@ -83,7 +83,7 @@ class TeapaiController extends Controller
             'venueTeapaiPria' => 'required',
             'venueTeapaiWanita' => 'required',
             'perlengkapanTeapai' => '',
-            'rundownAcaraTeapai' => 'required',
+            'rundownAcaraTeapai' => '',
         ]);
 
         Teapai::where('id', $teapai->id)
