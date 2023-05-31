@@ -47,4 +47,9 @@ class User extends Authenticatable
     {
         return $this->hasOne(Personals::class);
     }
+
+    public function resepsi()
+    {
+        return $this->hasOne(Resepsi::class);
+    }
 }
