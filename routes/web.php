@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ExportPemberkatan;
+use App\Http\Controllers\ExportSangjit;
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
@@ -39,6 +40,8 @@ Route::resource('/teapai', TeapaiController::class);
 Route::resource('/pemberkatan', PemberkatanController::class);
 
 Route::get('/pemberkatan-export', [ExportPemberkatan::class, 'export']);
+
+Route::get('/sangjit-export', [ExportSangjit::class, 'export']);
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [

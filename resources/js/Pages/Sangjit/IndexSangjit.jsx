@@ -65,6 +65,13 @@ export default function IndexSangjit(props) {
                                       >
                                           Hapus
                                       </span>
+
+                                      <a
+                                          className="mx-4 bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded "
+                                          href={`sangjit-export?id=${data.id}`}
+                                      >
+                                          Export
+                                      </a>
                                   </div>
                               </div>
                           );
