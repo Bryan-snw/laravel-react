@@ -19,6 +19,7 @@ export default function IndexPemberkatan(props) {
             >
                 Isi Data Pemberkatan
             </Link>
+
             <div className="my-5">
                 {pemberkatan.length > 0
                     ? pemberkatan.map((data, key) => {
@@ -70,6 +71,13 @@ export default function IndexPemberkatan(props) {
                                       >
                                           Hapus
                                       </span>
+
+                                      <a
+                                          className="mx-4 bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded "
+                                          href={`pemberkatan-export?id=${data.id}`}
+                                      >
+                                          Export
+                                      </a>
                                   </div>
                               </div>
                           );
